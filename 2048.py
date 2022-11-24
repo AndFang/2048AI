@@ -142,7 +142,7 @@ def smartAI(AIControl, box):
                         y = i
                         break
                 AIControl.setTile(x, y, n)
-        AIControl.startSearch()
+        AIControl.startSearch(2)
         if (prev == AIControl.grid):
             AIControl.next = (AIControl.next + 2) % 4
         if (AIControl.next == 0):
